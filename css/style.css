@@ -1,0 +1,339 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'yekan';
+  src: url("../fonts/Yekan.eot?#") format("eot"), url("../fonts/Yekan.woff") format("woff"), url("../fonts/Yekan.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'iransans';
+  src: url("../fonts/IRANSansWeb.eot") format("eot"), url("../fonts/IRANSansWeb.woff") format("woff"), url("../fonts/IRANSansWeb.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'hekayat';
+  src: url("../fonts/hekayat.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: iransans;
+  direction: rtl;
+}
+
+.top-header {
+  position: relative;
+  z-index: 500;
+  width: 100%;
+  height: 10px;
+  background-color: #272643;
+}
+
+.header {
+  background-image: url(../image/header.jpg);
+  width: 100%;
+  height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.header .brush-header {
+  position: absolute;
+  width: 400px;
+  height: 700px;
+  background-color: #ffffff;
+  left: -150px;
+  transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+}
+
+@media screen and (max-width: 1024px) {
+  .header .brush-header {
+    left: -300px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header .brush-header {
+    left: -400px;
+  }
+}
+
+.header .navbar {
+  background-color: #ffffff;
+  margin-top: 200px;
+  display: flex;
+  margin-right: -20px;
+  text-align: right;
+  border-radius: 50px 0px 0px 50px;
+  -webkit-border-radius: 50px 0px 0px 50px;
+  -moz-border-radius: 50px 0px 0px 50px;
+  -ms-border-radius: 50px 0px 0px 50px;
+  -o-border-radius: 50px 0px 0px 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .header .navbar {
+    border-radius: 10px 0px 0px 10px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    -ms-border-radius: 10px 0px 0px 10px;
+    -o-border-radius: 10px 0px 0px 10px;
+  }
+}
+
+.header .navbar form {
+  margin-right: 210px;
+}
+
+.header .navbar form input {
+  border: 0px;
+}
+
+.header .navbar form button {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header .navbar form {
+    margin-right: 55px;
+  }
+}
+
+.header .navbar-nav {
+  margin-right: 0px !important;
+}
+
+.header .nav-link {
+  color: black;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.header .nav-link:hover {
+  color: #2c698d;
+}
+
+.bg-post-card {
+  width: 100%;
+  min-height: 800px;
+  background-image: url(../image/bg-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: cover;
+  display: grid;
+  align-content: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .bg-post-card {
+    margin-top: -25px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bg-post-card {
+    margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bg-post-card {
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .bg-post-card {
+    margin-top: -270px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .bg-post-card {
+    margin-top: -290px;
+  }
+}
+
+.bg-news {
+  width: 100%;
+  min-height: 800px;
+  background-image: url(../image/bg-2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-tell-me {
+  width: 100%;
+  min-height: 800px;
+  background-image: url(../image/bg-3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+}
+
+.card-box {
+  margin-top: 180px;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-box {
+    margin-right: 50px;
+    margin-top: 250px;
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-box {
+    margin-top: 400px;
+  }
+}
+
+.card {
+  min-height: 300px;
+  margin-top: 50px;
+}
+
+.card img {
+  margin-top: 10px;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: right;
+}
+
+@media screen and (max-width: 320px) {
+  .card-text {
+    text-align: center;
+  }
+}
+
+.card-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card .btn-card {
+  background-color: #bae8e8;
+}
+
+.news-box {
+  height: 400px;
+  background-color: rgba(42, 95, 126, 0.4);
+  border: 1px solid #272643;
+  margin-top: 150px;
+  color: #ffffff;
+  text-align: right;
+}
+
+.news-box h1 {
+  margin-top: 50px;
+  margin-right: 50px;
+  font-size: 200%;
+}
+
+.news-box p {
+  margin-right: 50px;
+  font-size: 150%;
+}
+
+@media screen and (max-width: 425px) {
+  .news-box p {
+    margin-right: 0px;
+    font-size: 100%;
+  }
+  .news-box h1 {
+    margin-right: 0px;
+    margin-top: 20px;
+    font-size: 150%;
+  }
+}
+
+.tell-me-body {
+  position: relative;
+  color: #ffffff;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .tell-me-body {
+    width: 400px;
+  }
+}
+
+.tell-me-body .social img {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+iframe {
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: -450px;
+}
+
+@media screen and (max-width: 425px) {
+  iframe {
+    bottom: -250px;
+  }
+}
+
+.p-footer {
+  text-align: center;
+  margin-top: 460px;
+}
+
+@media screen and (max-width: 425px) {
+  .p-footer {
+    margin-top: 280px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .p-footer {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,255 @@
+@import "mixin";
+@import "data";
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/Yekan.eot?#') format('eot'), url('../fonts/Yekan.woff') format('woff'), url('../fonts/Yekan.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'iransans';
+    src: url('../fonts/IRANSansWeb.eot') format('eot'), url('../fonts/IRANSansWeb.woff') format('woff'), url('../fonts/IRANSansWeb.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'hekayat';
+    src: url('../fonts/hekayat.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: $font-iransans;
+    direction: rtl;
+}
+
+.top-header {
+    position: relative;
+    z-index: 500;
+    width: 100%;
+    height: 10px;
+    background-color: $color-bd;
+}
+
+.header {
+    background-image: url(../image/header.jpg);
+    width: 100%;
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    .brush-header {
+        position: absolute;
+        width: 400px;
+        height: 700px;
+        background-color: $color-w;
+        left: -150px;
+        @include rotate(-15deg);
+        @media screen and (max-width: 1024px) {
+            left: -300px;
+        }
+        @media screen and (max-width: 425px) {
+            left: -400px;
+        }
+    }
+    .navbar {
+        background-color: $color-w;
+        margin-top: 200px;
+        display: flex;
+        margin-right: -20px;
+        text-align: right;
+        @media screen and (max-width: 768px) {
+            @include border-radius(10px 0px 0px 10px);
+        }
+        @include border-radius(50px 0px 0px 50px);
+        form {
+            margin-right: 210px;
+            input {
+                border: 0px;
+            }
+            button {
+                @include border-radius(50px);
+            }
+            @media screen and (max-width: 1200px) {
+                margin-right: 55px;
+            }
+        }
+    }
+    .navbar-nav {
+        margin-right: 0px !important;
+    }
+    .nav-link {
+        color: black;
+        @include transition(.5s);
+        &:hover {
+            color: $color-bm;
+        }
+    }
+}
+
+.bg-post-card {
+    width: 100%;
+    min-height: 800px;
+    background-image: url(../image/bg-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    @media screen and (max-width: 1440px) {
+        margin-top: -25px;
+    }
+    @media screen and (max-width: 1024px) {
+        margin-top: -50px;
+    }
+    @media screen and (max-width: 768px) {
+        margin-top: -150px;
+    }
+    @media screen and (max-width: 425px) {
+        margin-top: -270px;
+    }
+    @media screen and (max-width: 320px) {
+        margin-top: -290px;
+    }
+}
+
+.bg-news {
+    width: 100%;
+    min-height: 800px;
+    background-image: url(../image/bg-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-tell-me {
+    width: 100%;
+    min-height: 800px;
+    background-image: url(../image/bg-3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    align-items: center;
+    position: relative;
+}
+
+.card-box {
+    margin-top: 180px;
+    margin-right: 100px;
+    @media screen and (max-width: 768px) {
+        margin-right: 50px;
+        margin-top: 250px;
+        margin-bottom: 150px;
+    }
+    @media screen and (max-width:425px) {
+        margin-top: 400px;
+    }
+}
+
+.card {
+    min-height: 300px;
+    margin-top: 50px;
+    img {
+        margin-top: 10px;
+    }
+    &-title {
+        text-align: center;
+    }
+    &-text {
+        text-align: right;
+        @media screen and (max-width: 320px) {
+            text-align: center;
+        }
+    }
+    &-btn {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .btn-card {
+        background-color: $color-bl;
+    }
+}
+
+.news-box {
+    height: 400px;
+    background-color: rgba(#2a5f7e, .4);
+    border: 1px solid $color-bd;
+    margin-top: 150px;
+    color: $color-w;
+    text-align: right;
+    h1 {
+        margin-top: 50px;
+        margin-right: 50px;
+        font-size: 200%;
+    }
+    p {
+        margin-right: 50px;
+        font-size: 150%;
+    }
+    @media screen and (max-width:425px) {
+        p {
+            margin-right: 0px;
+            font-size: 100%;
+        }
+        h1 {
+            margin-right: 0px;
+            margin-top: 20px;
+            font-size: 150%;
+        }
+    }
+}
+
+.tell-me-body {
+    position: relative;
+    color: $color-w;
+    text-align: right;
+    @media screen and (max-width: 768px) {
+        width: 400px;
+    }
+    .social img {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+iframe {
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: -450px;
+    @media screen and (max-width: 425px) {
+        bottom: -250px;
+    }
+}
+
+.p-footer {
+    text-align: center;
+    margin-top: 460px;
+    @media screen and (max-width: 425px) {
+        margin-top: 280px;
+    }
+    @media screen and (max-width:320px) {
+        font-size: 14px;
+    }
+}

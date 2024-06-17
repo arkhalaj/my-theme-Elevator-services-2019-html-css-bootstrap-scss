@@ -1,0 +1,43 @@
+@mixin transition($time-transition...) {
+    transition: $time-transition;
+    -webkit-transition: $time-transition;
+    -moz-transition: $time-transition;
+    -ms-transition: $time-transition;
+    -o-transition: $time-transition;
+}
+
+@mixin border-radius($border-radius...) {
+    border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    -o-border-radius: $border-radius;
+}
+
+@mixin rotate($transform) {
+    transform: rotate($transform);
+    -webkit-transform: rotate($transform);
+    -moz-transform: rotate($transform);
+    -ms-transform: rotate($transform);
+    -o-transform: rotate($transform);
+}
+
+@mixin translate($translate...) {
+    transform: translate($translate);
+    -webkit-transform: translate($translate);
+    -moz-transform: translate($translate);
+    -ms-transform: translate($translate);
+    -o-transform: translate($translate);
+}
+
+@mixin translatey($translatey...) {
+    transform: translatey($translatey);
+    -webkit-transform: translatey($translatey);
+    -moz-transform: translatey($translatey);
+    -ms-transform: translatey($translatey);
+    -o-transform: translatey($translatey);
+}
+
+@mixin box-shadow ($drop-shadow...) {
+    box-shadow: $drop-shadow;
+}
